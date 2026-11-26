@@ -5,24 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Portafolio de Paolo Pelaez Villanueva. Desarrollo backend con Java y Spring Boot, aplicaciones Angular y proyectos de software en Lima, Perú.">
 <title>Paolo Pelaez Villanueva | Portafolio de desarrollo</title>
-<style>
-:root{color-scheme:dark;--ink:#eef5f1;--muted:#a4b9b0;--bg:#101815;--panel:#18241f;--line:#33473e;--accent:#b7f783;font-family:"Segoe UI",system-ui,sans-serif;scroll-behavior:smooth}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.6}a{color:var(--accent);text-underline-offset:.25em}a:hover{color:white}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.wrap{width:min(1080px,calc(100% - 44px));margin:auto}header{border-bottom:1px solid var(--line)}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}nav a{text-decoration:none;color:var(--ink)}.brand{font-weight:750}.navlinks,.actions,.tags{display:flex;gap:18px;flex-wrap:wrap}.navlinks{font-size:.93rem}.hero{display:grid;grid-template-columns:minmax(0,1fr) 245px;align-items:center;gap:64px;padding:92px 0 76px}.eyebrow{color:var(--accent);font-family:ui-monospace,monospace;letter-spacing:.09em;font-size:.86rem;font-weight:700;text-transform:uppercase;margin:0 0 15px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3rem,7.4vw,6rem);letter-spacing:-.075em;line-height:.97;margin-bottom:24px}h2{font-size:clamp(2rem,4.6vw,3.25rem);letter-spacing:-.05em;line-height:1.12;margin-bottom:20px}h3{font-size:1.25rem;line-height:1.25;margin-bottom:10px}.lead{font-size:clamp(1.12rem,2.2vw,1.42rem);max-width:630px;color:var(--muted);margin-bottom:25px}.portrait{margin:0}.portrait img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:20px;border:1px solid var(--line)}.portrait figcaption{margin-top:9px;color:var(--muted);font-size:.92rem}.button{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:10px 16px;text-decoration:none;font-weight:700}.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}.primary:hover{background:white;color:var(--bg)}section{padding:50px 0;border-top:1px solid var(--line)}.feature,.card{background:var(--panel);border:1px solid var(--line);border-radius:16px}.feature{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;padding:32px;margin:0 0 18px}.feature p,.card p,.about p{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-self:center;margin:0}.stats div{border-top:1px solid var(--line);padding-top:10px}.stats dt{color:var(--accent);font-size:2rem;font-weight:750;line-height:1.1}.stats dd{margin:4px 0 0;color:var(--muted);font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:24px}.card p{margin-bottom:14px}.tags{list-style:none;gap:8px;padding:0;margin:20px 0 0}.tags li{border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:var(--muted);font-size:.88rem}.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}.about p:last-child{margin-bottom:0}footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted)}footer p{margin:0}@media(max-width:700px){.hero{grid-template-columns:1fr 110px;gap:18px;padding:52px 0}nav{padding:14px 0;flex-wrap:wrap;gap:8px}.feature,.about{grid-template-columns:1fr;gap:22px}.feature{padding:22px}.portrait{align-self:start}.portrait figcaption{display:none}}@media(max-width:460px){.hero,.grid{grid-template-columns:1fr}.portrait{grid-row:1;width:98px}.actions{gap:9px}section{padding:36px 0}}@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
-.system{margin:0 0 18px;padding:24px 30px;border:1px solid var(--line);border-radius:16px;background:#121c18}.system figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:13px}.system figcaption strong{font-size:1.1rem}.system figcaption span{color:var(--muted);font-size:.91rem}.pipeline{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin:0;padding:0}.pipeline li{position:relative;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--panel)}.pipeline li+li::before{content:"";position:absolute;width:25px;height:1px;background:var(--accent);right:100%;top:50%}.pipeline small{display:block;color:var(--muted);font-size:.85rem}.pipeline strong{color:var(--accent)}.quality{color:var(--muted);margin:13px 0 0;font-size:.91rem}@media(max-width:520px){.system{padding:20px}.pipeline{grid-template-columns:1fr;gap:12px}.pipeline li+li::before{width:1px;height:12px;top:auto;bottom:100%;right:auto;left:24px}}
-.flow-controls{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}.flow-controls[hidden]{display:none}.flow-controls button{font:inherit;font-weight:650;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}.flow-controls button[aria-pressed=true]{background:var(--accent);color:var(--bg);border-color:var(--accent)}.flow-controls button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.flow-result{border-inline-start:3px solid var(--accent);padding:0 0 0 12px;margin:15px 0 0;color:var(--ink)}.pipeline small{margin-top:4px}
-.tech-grid .card{border-top:2px solid var(--accent)}.tech-grid .tags{margin-top:12px}.about{display:block;max-width:72ch}
-</style>
+<link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-<header><nav class="wrap" aria-label="Navegación principal"><a class="brand" href="#inicio">Paolo Pelaez</a><div class="navlinks"><a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#perfil">Sobre mí</a><a href="#contacto">Contacto</a></div></nav></header>
-<main id="inicio" class="wrap">
-<div class="hero">
-<div><p class="eyebrow">Desarrollo de software · Lima, Perú</p><h1>Paolo Pelaez<br>Villanueva</h1><p class="lead">Desarrollo APIs con Java y Spring Boot y construyo interfaces con Angular. Busco prácticas en desarrollo de software con foco en backend.</p><div class="actions"><a class="button primary" href="#proyectos">Ver proyectos</a><a class="button" href="https://www.linkedin.com/in/paolo-pelaez-villanueva/">Conectar en LinkedIn</a></div></div>
-<figure class="portrait"><img src="https://avatars.githubusercontent.com/u/147014327?v=4&amp;s=490" width="245" height="245" alt="Paolo Pelaez Villanueva"><figcaption>Ingeniería de Sistemas e Informática · UTP</figcaption></figure>
-</div>
+<header id="inicio"><nav class="wrap" aria-label="Navegación principal"><a class="brand" href="#inicio"><span aria-hidden="true">PP</span> Paolo Pelaez</a><div class="navlinks"><a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#perfil">Sobre mí</a><a class="nav-contact" href="#contacto">Contacto</a></div></nav></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="nombre">
+  <div class="hero-copy">
+    <p class="eyebrow availability">Disponible para prácticas de desarrollo</p>
+    <h1 id="nombre">Paolo Pelaez<br>Villanueva<span>.</span></h1>
+    <p class="role">Backend con Java y Spring Boot</p>
+    <p class="lead">Construyo APIs, modelos de datos e interfaces web. Como voluntario de IEEE WIE UTP desarrollé una plataforma para gestionar proyectos, eventos y voluntariado.</p>
+    <div class="actions">
+      <a class="button primary" href="#proyectos">Ver proyectos</a>
+      <a class="button" href="https://www.linkedin.com/in/paolo-pelaez-villanueva/">Contactar en LinkedIn</a>
+    </div>
+  </div>
+  <aside class="profile-card" aria-label="Formación y ubicación">
+    <img src="https://avatars.githubusercontent.com/u/147014327?v=4&amp;s=490" width="480" height="480" alt="Paolo Pelaez Villanueva">
+    <div class="profile-caption">
+      <p class="eyebrow">Lima, Perú</p>
+      <p><strong>Ingeniería de Sistemas e Informática</strong><br>UTP · Décimo superior</p>
+      <a href="https://github.com/PaoloPelaezVillanueva">Ver perfil de GitHub</a>
+    </div>
+  </aside>
+</section>
 <section id="proyectos" aria-labelledby="proyectos-titulo">
-<h2 id="proyectos-titulo">Proyectos</h2>
-<article class="feature"><div><p class="eyebrow">Voluntariado · IEEE WIE UTP</p><h3>Plataforma de proyectos, eventos y voluntariado</h3><p>Desarrollé la API, el modelo de datos y la interfaz. Incorporé autenticación con JWT, migraciones con Flyway, pruebas automatizadas e integración continua.</p><a class="button primary" href="https://ieee-wie-utp.vercel.app/">Abrir plataforma</a></div><dl class="stats"><div><dt>30+</dt><dd>endpoints REST</dd></div><div><dt>4</dt><dd>roles de acceso</dd></div><div><dt>11</dt><dd>tablas en PostgreSQL</dd></div></dl></article>
+<h2 id="proyectos-titulo">Proyectos seleccionados</h2>
+<article class="feature"><div><p class="eyebrow">Voluntariado · Desarrollo full stack</p><h3>Plataforma IEEE WIE UTP</h3><p>Una plataforma para organizar proyectos, eventos y voluntariado. Desarrollé la API REST en Spring Boot, el modelo en PostgreSQL y la interfaz en Angular. Implementé acceso por roles, pruebas automatizadas y CI.</p><div class="actions"><a class="button primary" href="https://ieee-wie-utp.vercel.app/">Abrir plataforma</a><a class="button" href="#sistema-titulo">Explorar la arquitectura</a></div></div><dl class="stats"><div><dt>30+</dt><dd>endpoints REST</dd></div><div><dt>4</dt><dd>roles de acceso</dd></div><div><dt>11</dt><dd>tablas en PostgreSQL</dd></div></dl></article>
 <figure class="system" aria-labelledby="sistema-titulo">
 <figcaption><strong id="sistema-titulo">Del clic a la base de datos</strong><span>Demostración ilustrativa de IEEE WIE UTP</span></figcaption>
 <div class="flow-controls" role="group" aria-label="Elige un escenario" hidden>
@@ -41,7 +51,15 @@
 <p class="quality">Pruebas con JUnit, Testcontainers y Vitest · Integración continua con GitHub Actions</p>
 </figure>
 <div class="grid">
-<article class="card"><h3>CRM de cobranzas</h3><p>API para gestionar cuentas, registrar gestiones y consultar reportes. El repositorio incluye un modo demo.</p><a href="https://github.com/PaoloPelaezVillanueva/web">Ver código del CRM</a></article>
+<article class="card crm-card">
+  <p class="eyebrow">Backend · Java, MySQL y Docker</p>
+  <h3>CRM de cobranzas</h3>
+  <p>API para gestionar cuentas, registrar gestiones y consultar reportes. El backend tiene un perfil de producción y un contenedor probado con MySQL 8.4.</p>
+  <div class="actions">
+    <a href="https://github.com/PaoloPelaezVillanueva/web">Ver repositorio</a>
+    <a href="https://github.com/PaoloPelaezVillanueva/web/actions/runs/45904303890">Ver pruebas en GitHub Actions</a>
+  </div>
+</article>
 <article class="card"><h3>Tambo Backend</h3><p>API de punto de venta con catálogo, inventario y ventas. En el equipo trabajé en el módulo de productos y en DevOps.</p><a href="https://github.com/PaoloPelaezVillanueva/Herramientas-de-desarrolllo">Ver código de Tambo</a></article>
 <article class="card"><h3>Sistema de alquileres</h3><p>Interfaz en Angular y API en Spring Boot con PostgreSQL.</p><div class="actions"><a href="https://github.com/PaoloPelaezVillanueva/falquiler-frontend">Frontend</a><a href="https://github.com/PaoloPelaezVillanueva/falquiler-backend">Backend</a></div></article>
 <article class="card"><h3>Misión WIE Chincha</h3><p>Juegos web que permiten cambiar reglas y ver su efecto en un taller de programación.</p><a href="https://github.com/PaoloPelaezVillanueva/wie-chincha">Ver código del taller</a></article>
@@ -57,7 +75,7 @@
 </div>
 </section>
 <section id="perfil" class="about" aria-labelledby="perfil-titulo"><h2 id="perfil-titulo">Sobre mí</h2><p>Estudio Ingeniería de Sistemas e Informática en la UTP y formo parte del décimo superior. Me interesa entender cómo trabaja un equipo y traducir sus necesidades en software que pueda probar y usar.</p><p>Como encargado de local para el Jurado Nacional de Elecciones, coordiné un equipo operativo y atendí incidencias durante la jornada electoral.</p></section>
-<section id="contacto" aria-labelledby="contacto-titulo"><h2 id="contacto-titulo">Contacto</h2><p>Estoy disponible para conversar sobre prácticas en backend, full stack o análisis de sistemas.</p><div class="actions"><a class="button primary" href="https://www.linkedin.com/in/paolo-pelaez-villanueva/">LinkedIn</a><a class="button" href="https://github.com/PaoloPelaezVillanueva">GitHub</a></div></section>
+<section id="contacto" aria-labelledby="contacto-titulo"><h2 id="contacto-titulo">Contacto</h2><p>Busco prácticas en backend, desarrollo full stack o análisis de sistemas. Puedes escribirme por LinkedIn para conversar sobre una oportunidad.</p><div class="actions"><a class="button primary" href="https://www.linkedin.com/in/paolo-pelaez-villanueva/">LinkedIn</a><a class="button" href="https://github.com/PaoloPelaezVillanueva">GitHub</a></div></section>
 </main>
 <footer><div class="wrap"><p>Paolo Pelaez Villanueva · Lima, Perú</p></div></footer>
 <script>
