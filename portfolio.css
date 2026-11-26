@@ -60,7 +60,10 @@ h3{font-size:1.6rem;margin-bottom:12px}
 .stats div{border-top:1px solid #688a7b;padding-top:13px}
 .stats dt{font-size:clamp(1.85rem,4.5vw,3.45rem);line-height:1;font-weight:650}
 .stats dd{margin:5px 0 0;font-size:.92rem}
-.system,.card{background:var(--white);border:1px solid var(--line);border-radius:12px}
+.system,.card,.evidence{background:var(--white);border:1px solid var(--line);border-radius:12px}
+.evidence{margin:0 0 16px;padding:clamp(16px,3vw,30px)}
+.evidence ul{padding-left:20px;margin:0;color:var(--muted)}
+.evidence li+li{margin-top:6px}
 .system{margin:0 0 20px;padding:clamp(16px,3vw,30px)}
 .system figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
 .system figcaption strong{font-size:1.25rem}
